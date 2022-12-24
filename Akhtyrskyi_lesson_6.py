@@ -8,41 +8,47 @@ print(f'my_list_1 = {my_list_1}')
 print(f'my_list_2 = {my_list_2}')
 
 
-def task_1(list_a):
-    for i in list_a:
+def task_1(list):
+    list_1 = list.copy()
+    for i in list_1:
         if i > 100:
             print(i, end=' ')
     print()
 
 
-def task_2(list_b):
+def task_2(list):
+    list_2 = list.copy()
     my_results = []
-    for i in list_b:
+    for i in list_2:
         if i > 100:
             my_results.append(i)
     print(my_results)
 
 
-def task_3(list_c):
-    if len(list_c) < 2:
-        list_c.append(0)
+def task_3(list):
+    list_3 = list.copy()
+    if len(list_3) < 2:
+        list_3.append(0)
     else:
-        list_c.append(list_c[-1] + list_c[-2])
-    print(list_c)
+        list_3.append(list_3[-1] + list_3[-2])
+    print(list_3)
 
 
-def task_4(list_d, k):
-    for i in range(k, len(list_d) - 1):
-        list_d[i] = list_d[i + 1]
-    list_d.pop()
-    print(list_d)
+def task_4(list, k):
+    list_4 = list.copy()
+    for i in range(k, len(list_4) - 1):
+        list_4[i] = list_4[i + 1]
+    list_4.pop()
+    print(list_4)
 
 
-def task_5(list_e, k, C):
-    for i in range(len(list_e) - 1, k, -1):
-        list_e[i] = list_e[i - 1]
-    list_e[k] = C
-    print(list_e)
+def task_5(list, k, C):
+    list_5 = list.copy()
+    list_5.append('x')
+    for i in range(len(list_5) - 1, k, -1):
+        list_5[i] = list_5[i - 1]
+    list_5[k] = C
+    print(list_5)
 
 
 def task_6(list_1, list_2):
