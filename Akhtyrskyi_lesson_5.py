@@ -3,32 +3,62 @@ my_string = '0123456789'
 for i in my_string:
     for j in my_string:
         print(int(i + j), end=',')
+print()
 
-print()
-print()
 print('Задание №2')
-size = int(input('Введите высоту треугольника:  '))
+height = int(input('Введите высоту треугольника: '))
 print('A')
-for i in range(size):
-    print('  ' * (size - i), '*', i * ' * *', sep='')
+for i in range(1, height + 1):
+    for j in range(height - i):
+        print(' ', end=' ')
+    for z in range(2 * i - 1):
+        if z == 0 or z == 2 * i - 2:
+            print('*', end=' ')
+        else:
+            if i == height:
+                print('*', end=' ')
+            else:
+                print(' ', end=' ')
+    print()
 print()
 print('B')
-print(size * '  ', '*', sep='')
-for i in range(size - 2):
-    print((size - i - 1) * '  ', '*', ' ', (i * 2 + 1) * '  ', '*', sep='')
-print((size - i - 2) * ' ', (size * 2 - 1) * ' *', sep='')
+for i in range(1, height + 1):
+    for j in range(height * 2 - i * 2):
+        print(' ', end='')
+    for z in range(2 * i - 1):
+        print('*', end=' ')
+    print()
 print()
 print('C')
-for i in range(size):
-    print('  ' * (size - i), '*', i * ' * *', sep='')
-for i in reversed(range(size - 2)):
-    print((size - i - 1) * '  ', '*', (i * 2 + 1) * '  ', ' *', sep='')
-print(size * '  ', '*', sep='')
+for i in range(1, height + 1):
+    for j in range(height * 2 - i * 2):
+        print(' ', end='')
+    for z in range(2 * i - 1):
+        print('*', end=' ')
+    print()
+for i in range(height - 1):
+    for j in range(i + 1):
+        print(' ', end=' ')
+    for j in range(2 * (height - i - 1) - 1):
+        if j == 0 or j == 2 * (height - i - 1) - 2:
+            print('*', end=' ')
+        else:
+            print(' ', end=' ')
+    print()
 print()
 print('D')
-for i in range(size):
-    print('  ' * (size - i), '*', i * ' * *', sep='')
-for i in reversed(range(size - 2)):
-    print((size - i - 1) * '  ', '*', int((i * 2 + 1) / 2) * '  ', ' *',
-          int((i * 2 + 1) / 2) * '  ', ' *', sep='')
-print(size * '  ', '*', sep='')
+for i in range(1, height + 1):
+    for j in range(height * 2 - i * 2):
+        print(' ', end='')
+    for z in range(2 * i - 1):
+        print('*', end=' ')
+    print()
+for i in range(height - 1):
+    for j in range(i + 1):
+        print(' ', end=' ')
+    for j in range(2 * (height - i - 1) - 1):
+        if j == 0 or j == 2 * (height - i - 1) - 2 or j == (height - i - 1) - 1:
+            print('*', end=' ')
+        else:
+            print(' ', end=' ')
+    print()
