@@ -67,8 +67,7 @@ if len(my_str_8) % 2 != 0:
 for i in range(0, len(my_str_8), 2):
     list_8.append(my_str_8[i:i + 2])
 print(list_8)
-#
-#
+
 print('Задание №9')
 my_list_9 = [3, 6, 9, 34, 43, 6, 57, 44, 7]
 print(my_list_9)
@@ -98,25 +97,14 @@ str_12 = 'mc68568-c356c-3567-376'
 str_12_2 = 'jd826529yf9276592828740=-'
 print(str_12)
 print(str_12_2)
-my_list_12 = []
-for i in str_12:
-    for j in str_12_2:
-        if i == j:
-            my_list_12.append(i)
-print(set(my_list_12))
+my_list_12 = [i for i in str_12 if i in str_12_2]
+print(my_list_12)
 
 print('Задание №13')
 str_13 = 'aaaasdf1'
 str_13_2 = 'asdfff2'
 print(str_13)
 print(str_13_2)
-my_list_13 = []
-new_list_13 = []
-for i in str_13:
-    for j in str_13_2:
-        if i == j:
-            my_list_13.append(i)
-for item in set(my_list_13):
-    if str_13.count(item) == 1 and str_13_2.count(item) == 1:
-        new_list_13.append(item)
+my_list_13 = [i for i in str_13 if i in str_13_2]
+new_list_13 = [j for j in my_list_13 if str_13.count(j) == 1 and str_13_2.count(j) == 1]
 print(new_list_13)
