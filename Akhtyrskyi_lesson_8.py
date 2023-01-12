@@ -25,11 +25,11 @@ print("a_1)")
 list_unique_keys = [i for i in (my_dict_1 | my_dict_2) if i in my_dict_1 and i in my_dict_2]
 print(list_unique_keys)
 
-print("a_2)")
+print("б)")
 list_unique_keys_2 = list(set(my_dict_1) - set(my_dict_2))
 print(list_unique_keys_2)
 
-print("б)")
+print("б_2)")
 list_unique_keys_3 = [i for i in my_dict_1 if i not in my_dict_2]
 print(list_unique_keys_3)
 
