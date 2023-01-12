@@ -54,3 +54,14 @@ for j in my_dict_2:
     if j not in my_dict_1:
         my_dict_4.update([(j, my_dict_2[j])])
 print(my_dict_4)
+
+print("г_2)")
+dikt_rez = {}
+for d in my_dict_1, my_dict_2:
+    dict_keys = dikt_rez.keys()
+    for d_key, d_value in d.items():
+        if d_key in dict_keys:
+            dikt_rez[d_key] = [dikt_rez[d_key], d_value]
+        else:
+            dikt_rez[d_key] = d_value
+print(dikt_rez)
