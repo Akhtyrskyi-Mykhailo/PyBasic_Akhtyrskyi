@@ -77,8 +77,7 @@ def task_7(string_7_1: str, string_7_2: str) -> list:
     :return: new_list_7
     """
 
-    new_list_7 = [i for i in set(string_7_1 + string_7_2) if string_7_1.count(i) == 1 and string_7_2.count(i) == 1
-                  and i in string_7_1 and i in string_7_2]
+    new_list_7 = [i for i in string_7_1 if string_7_1.count(i) == 1 and string_7_2.count(i) == 1]
     return new_list_7
 
 
