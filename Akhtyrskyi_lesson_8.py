@@ -21,8 +21,8 @@ print('Задание №2')
 my_dict_1 = {"name": "John", "age": 15, "surname": "Ivanov", "Date of Birth": "02.04.1985", "adress": "Shevchenko St."}
 my_dict_2 = {"name": "Bill", "age": 25, "surname": "Petrov", "profession": "doctor", "Place of Birth": "Ukraine"}
 
-print("a_1)")
-list_unique_keys = [i for i in (my_dict_1 | my_dict_2) if i in my_dict_1 and i in my_dict_2]
+print("a)")
+list_unique_keys = [i for i in my_dict_1 if i in my_dict_2]
 print(list_unique_keys)
 
 print("б)")
