@@ -2,7 +2,7 @@ from Akhtyrskii_lesson_9 import *
 
 my_list = ['qawse', 'axdcf', 'xbdv', 'arxdt', 'uytec']
 my_list_4 = [5678, 'qawse', 'axdcf', 1234, 'xbdv', 'arxdt', 3456]
-my_str_1 = 'aqwqsxfr'
+my_str_1 = 'aqqswxfr'
 my_str_2 = 'zbykqwst'
 names = ['qwerty', 'someone', 'user', 'admin']
 domains = ['org', 'com', 'info', 'biz', 'edu']
