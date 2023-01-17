@@ -1,4 +1,4 @@
-from Akhtyrskyi_lesson_2 import *
+from Akhtyrskyi_lessons_10 import *
 import pprint
 
 print('Задание №1')
