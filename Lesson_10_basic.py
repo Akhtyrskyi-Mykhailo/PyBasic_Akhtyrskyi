@@ -1,12 +1,10 @@
-from Akh import *
+from Akhtyrskyi_lesson_2 import *
 import pprint
+
 print('Задание №1')
-
-cenzor_text(input('Введите название файла: '), input('Введите слова через пробел: '))
-
+file = input('Введите название файла: ')
+replacement_words = input('Введите слова через пробел: ')
+cenzor_text(file, replacement_words)
 print('Задание №2')
-
-
-
-x = count_words(input('Введите название файла: '))
+x = count_words(file)
 pprint.pprint(x)
