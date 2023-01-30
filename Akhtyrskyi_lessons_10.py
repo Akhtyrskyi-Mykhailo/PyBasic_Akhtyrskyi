@@ -13,6 +13,7 @@ def cenzor_text(filename: str, words: str):
     text_lines = text.readlines()
 
     list_words = words.split()
+
     rez_file = open("rez_file.txt", "w")
     for line in text_lines:
         for w in list_words:
@@ -38,3 +39,4 @@ def count_words(filename: str) -> dict:
     for w in unique_words:
         total[w] = reg_text_list.count(w)
     return total
+
